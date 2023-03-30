@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.jpg">
+    <title>Form | 543V4</title>
+    <style>
+        img {
+            border-radius: 100%;
+        }
+
+        div {
+            margin: auto;
+            height: 300px;
+            width: 400px;
+            position: relative
+        }
+
+        p {
+            margin-left: 80px;
+        }
+
+        .in {
+            margin-left: 80px;
+            padding: 10px
+        }
+
+        #btn {
+            margin-top: 20px;
+            position: absolute;
+            left: 150px;
+        }
+
+        button:hover {
+            background: green;
+            font-size: 13px;
+            cursor: pointer;
+            color: white;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        body {
+            background: url(logo.jpg) no-repeat scroll center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        * {
+            color: white;
+        }
+
+        input {
+            background-color: #292929;
+            color: #ffffff;
+            border: none;
+            outline: none;
+            border-radius: 6px;
+        }
+    </style>
+    <script>
+        function fa() {
+            if (u.value == "" || p.value == "") {
+                f()
+                document.getElementById("u").style.border = "3px solid red"
+                document.getElementById("p").style.border = "3px solid red"
+                btn.textContent = "Fill Data"
+            }
+            else {
+                document.getElementById("u").style.border = "3px solid green"
+                document.getElementById("p").style.border = "3px solid green"
+                btn.textContent = "Submit Now"
+                btn.style.left = "120px";
+            }
+        }
+        flag = true
+        function f() {
+            if (flag == true) {
+                btn.style.left = "210px"
+                flag = false
+            }
+            else if (flag == false) {
+                btn.style.left = "80px"
+                flag = true
+            }
+        } 
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1 style="text-align:center">Login...</h1>
+        <p>Username</p> <input class="in" type="text" placeholder="Enter Username" id="u" />
+        <p>Password</p> <input class="in" type="password" placeholder="Enter Password" id="p" />
+        <br>
+        <button onmouseenter="fa()" onclick="alert('Kudos, Good Job')" id="btn" />Submit</button>
+    </div> <br>
+    <center> <a href="https://www.instagram.com/saeva_villain/" target="_blank"> <img src="instagram.jpg" width="40px"></a> <a
+            href="https://github.com/HACKER1176/" target="_blank"><img src="github-mark-white.png" width="40px"></a> </center>
+</body>
+
+</html>
