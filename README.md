@@ -1,1 +1,1 @@
-- [Preview](https://github.com/HACKER1176/Fun_Form)
+- [Preview](https://HACKER1176.github.io/Fun_Form)
