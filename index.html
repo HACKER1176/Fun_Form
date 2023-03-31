@@ -7,68 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="logo.jpg">
     <title>Form | 543V4</title>
-    <style>
-                img {
-            border-radius: 100%;
-        }
+    <link rel="stylesheet" href="style.css">  
+</head>
 
-        div {
-            margin: auto;
-            height: 300px;
-            width: 400px;
-            position: relative
-        }
-
-        p {
-            margin-left: 80px;
-        }
-
-        .in {
-            margin-left: 80px;
-            padding: 10px
-        }
-
-        #btn {
-            margin-top: 20px;
-            position: absolute;
-            left: 140px;
-        }
-
-        button:hover {
-            background: green;
-            font-size: 13px;
-            cursor: pointer;
-            color: white;
-        }
-
-        button {
-            padding: 10px 20px;
-            background-color: blue;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        body {
-            background: url(logo.jpg) no-repeat center center;
-            background-size: contain;
-            background-attachment: fixed;
-            background-color: black;
-        }
-
-        * {
-            color: white;
-        }
-
-        input {
-            background-color: #292929;
-            color: #ffffff;
-            border: none;
-            outline: none;
-            border-radius: 6px;
-        }
-    </style>
+<body>
+    <div>
+        <h1 style="text-align:center">LOGIN</h1>
+        <p>Username</p> <input class="in" type="text" placeholder="Enter Username" id="u" />
+        <p>Password</p> <input class="in" type="password" placeholder="Enter Password" id="p" />
+        <br>
+        <button onmouseenter="fa()" onclick="alert('Kudos, Good Job')" id="btn" />Submit</button>
+    </div> <br>
+    <center> <a href="https://www.instagram.com/saeva_villain/" target="_blank"> <img src="instagram.jpg" width="40px"></a> 
+        <a href="https://github.com/HACKER1176/" target="_blank"><img src="github-mark-white.png" width="40px"></a> </center>
+    
     <script>
         function fa() {
             if (u.value == "" || p.value == "") {
@@ -96,18 +48,6 @@
             }
         } 
     </script>
-</head>
-
-<body>
-    <div>
-        <h1 style="text-align:center">LOGIN</h1>
-        <p>Username</p> <input class="in" type="text" placeholder="Enter Username" id="u" />
-        <p>Password</p> <input class="in" type="password" placeholder="Enter Password" id="p" />
-        <br>
-        <button onmouseenter="fa()" onclick="alert('Kudos, Good Job')" id="btn" />Submit</button>
-    </div> <br>
-    <center> <a href="https://www.instagram.com/saeva_villain/" target="_blank"> <img src="instagram.jpg" width="40px"></a> 
-        <a href="https://github.com/HACKER1176/" target="_blank"><img src="github-mark-white.png" width="40px"></a> </center>
 </body>
 
 </html>
