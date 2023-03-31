@@ -41,9 +41,10 @@
         }
 
         body {
-            background: url(logo.jpg) no-repeat scroll center;
-            background-size: cover;
+            background: url(logo.jpg) no-repeat center center;
+            background-size: contain;
             background-attachment: fixed;
+            background-color: black;
         }
 
         * {
